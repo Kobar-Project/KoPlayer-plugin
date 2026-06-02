@@ -1,0 +1,26 @@
+{
+  "id": "kobar.koplayer",
+  "name": "koPlayer",
+  "version": "1.0.0",
+  "description": "A lightweight, floating media player to control your music and videos. Enjoy seamless media playback integration while working.",
+  "author": "KoBar",
+  "entry": "index.js",
+  "icon": "music_note",
+  "categories": [
+    "Utility"
+  ],
+  "isBeta": false,
+  "githubRepo": "Kobar-Project/KoPlayer-plugin",
+  "languages": [
+    "en",
+    "tr",
+    "de",
+    "es",
+    "fr",
+    "ru",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ]
+}
