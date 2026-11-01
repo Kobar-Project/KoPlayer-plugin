@@ -13,7 +13,12 @@
       pipVideo: "PIP Video",
       closePip: "Close PIP",
       videoDetected: "Video detected — open in PiP",
-      openPipTooltip: "Open video in Picture-in-Picture"
+      openPipTooltip: "Open video in Picture-in-Picture",
+      close: "Close",
+      previous: "Previous",
+      next: "Next",
+      play: "Play",
+      pause: "Pause"
     },
     tr: {
       noMediaPlaying: "Medya oynatılmıyor",
@@ -26,7 +31,12 @@
       pipVideo: "PIP Video",
       closePip: "PIP Kapat",
       videoDetected: "Video algılandı — PiP'te aç",
-      openPipTooltip: "Videoyu Resim-İçinde-Resim modunda aç"
+      openPipTooltip: "Videoyu Resim-İçinde-Resim modunda aç",
+      close: "Kapat",
+      previous: "Önceki",
+      next: "Sonraki",
+      play: "Oynat",
+      pause: "Duraklat"
     },
     de: {
       noMediaPlaying: "Keine Medienwiedergabe",
@@ -39,7 +49,12 @@
       pipVideo: "PIP Video",
       closePip: "PIP schließen",
       videoDetected: "Video erkannt — in PiP öffnen",
-      openPipTooltip: "Video in Bild-in-Bild öffnen"
+      openPipTooltip: "Video in Bild-in-Bild öffnen",
+      close: "Schließen",
+      previous: "Zurück",
+      next: "Weiter",
+      play: "Wiedergabe",
+      pause: "Pause"
     },
     ar: {
       noMediaPlaying: "لا يوجد وسائط قيد التشغيل",
@@ -52,7 +67,12 @@
       pipVideo: "فيديو PIP",
       closePip: "إغلاق PIP",
       videoDetected: "تم اكتشاف فيديو — فتح في PiP",
-      openPipTooltip: "فتح الفيديو في وضع صورة داخل صورة"
+      openPipTooltip: "فتح الفيديو في وضع صورة داخل صورة",
+      close: "إغلاق",
+      previous: "السابق",
+      next: "التالي",
+      play: "تشغيل",
+      pause: "إيقاف مؤقت"
     },
     zh: {
       noMediaPlaying: "没有播放媒体",
@@ -65,7 +85,12 @@
       pipVideo: "画中画视频",
       closePip: "关闭画中画",
       videoDetected: "检测到视频 — 在画中画中打开",
-      openPipTooltip: "在画中画中打开视频"
+      openPipTooltip: "在画中画中打开视频",
+      close: "关闭",
+      previous: "上一首",
+      next: "下一首",
+      play: "播放",
+      pause: "暂停"
     },
     fr: {
       noMediaPlaying: "Aucun média en cours",
@@ -78,7 +103,12 @@
       pipVideo: "Vidéo PIP",
       closePip: "Fermer PIP",
       videoDetected: "Vidéo détectée — ouvrir en PiP",
-      openPipTooltip: "Ouvrir la vidéo en mode Image dans l'image"
+      openPipTooltip: "Ouvrir la vidéo en mode Image dans l'image",
+      close: "Fermer",
+      previous: "Précédent",
+      next: "Suivant",
+      play: "Lecture",
+      pause: "Pause"
     },
     hi: {
       noMediaPlaying: "कोई मीडिया नहीं चल रहा है",
@@ -91,7 +121,12 @@
       pipVideo: "पीआईपी वीडियो",
       closePip: "पीआईपी बंद करें",
       videoDetected: "वीडियो का पता चला - PiP में खोलें",
-      openPipTooltip: "पिक्चर-इन-पिक्चर में वीडियो खोलें"
+      openPipTooltip: "पिक्चर-इन-पिक्चर में वीडियो खोलें",
+      close: "बंद करें",
+      previous: "पिछला",
+      next: "अगला",
+      play: "चलाएं",
+      pause: "रोकें"
     },
     es: {
       noMediaPlaying: "No se reproduce multimedia",
@@ -104,7 +139,12 @@
       pipVideo: "Video PIP",
       closePip: "Cerrar PIP",
       videoDetected: "Video detectado — abrir en PiP",
-      openPipTooltip: "Abrir video en Picture-in-Picture"
+      openPipTooltip: "Abrir video en Picture-in-Picture",
+      close: "Cerrar",
+      previous: "Anterior",
+      next: "Siguiente",
+      play: "Reproducir",
+      pause: "Pausa"
     },
     ja: {
       noMediaPlaying: "メディアが再生されていません",
@@ -117,7 +157,12 @@
       pipVideo: "PIPビデオ",
       closePip: "PIPを閉じる",
       videoDetected: "動画を検出しました — PiPで開く",
-      openPipTooltip: "ピクチャーインピクチャーで動画を開く"
+      openPipTooltip: "ピクチャーインピクチャーで動画を開く",
+      close: "閉じる",
+      previous: "前へ",
+      next: "次へ",
+      play: "再生",
+      pause: "一時停止"
     },
     ru: {
       noMediaPlaying: "Нет воспроизводимого медиа",
@@ -130,9 +175,111 @@
       pipVideo: "PIP Видео",
       closePip: "Закрыть PIP",
       videoDetected: "Видео обнаружено — открыть в PiP",
-      openPipTooltip: "Открыть видео в режиме 'Картинка в картинке'"
+      openPipTooltip: "Открыть видео в режиме 'Картинка в картинке'",
+      close: "Закрыть",
+      previous: "Назад",
+      next: "Далее",
+      play: "Воспроизвести",
+      pause: "Пауза"
     }
   };
+  const ICON_FONT = "'Material Symbols Rounded', 'Material Symbols Outlined'";
+  const iconStyle = (size, fill = 0) => ({
+    fontFamily: ICON_FONT,
+    fontSize: size,
+    fontVariationSettings: `'FILL' ${fill}, 'wght' 400`,
+    lineHeight: 1
+  });
+  const BAR_ID = "koplayer-plugin-panel";
+  const LEVEL_COUNT = 5;
+  const BAR_TEXT = {
+    en: { playing: "KoPlayer — playing: {title}", paused: "KoPlayer — paused: {title}", idle: "KoPlayer — nothing playing" },
+    tr: { playing: "KoPlayer — çalıyor: {title}", paused: "KoPlayer — duraklatıldı: {title}", idle: "KoPlayer — çalan yok" },
+    de: { playing: "KoPlayer — spielt: {title}", paused: "KoPlayer — pausiert: {title}", idle: "KoPlayer — keine Wiedergabe" },
+    fr: { playing: "KoPlayer — lecture : {title}", paused: "KoPlayer — en pause : {title}", idle: "KoPlayer — rien en lecture" },
+    es: { playing: "KoPlayer — reproduciendo: {title}", paused: "KoPlayer — en pausa: {title}", idle: "KoPlayer — nada en reproducción" },
+    zh: { playing: "KoPlayer — 正在播放：{title}", paused: "KoPlayer — 已暂停：{title}", idle: "KoPlayer — 没有播放内容" },
+    ja: { playing: "KoPlayer — 再生中：{title}", paused: "KoPlayer — 一時停止中：{title}", idle: "KoPlayer — 再生なし" },
+    ru: { playing: "KoPlayer — играет: {title}", paused: "KoPlayer — пауза: {title}", idle: "KoPlayer — ничего не играет" },
+    ar: { playing: "KoPlayer — قيد التشغيل: {title}", paused: "KoPlayer — متوقف مؤقتًا: {title}", idle: "KoPlayer — لا شيء قيد التشغيل" },
+    hi: { playing: "KoPlayer — चल रहा है: {title}", paused: "KoPlayer — रुका हुआ: {title}", idle: "KoPlayer — कुछ नहीं चल रहा" }
+  };
+  (function setupBarTile() {
+    const ext = window.KoBarExtensions;
+    if (typeof ext?.setBarItemState !== "function") return;
+    const store = window.useAppStore;
+    if (!store?.getState || !store?.subscribe) return;
+    let visible = true;
+    let timer = null;
+    let tick = 0;
+    const seedOf = (s) => {
+      let h = 7;
+      for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 9973;
+      return h;
+    };
+    const buildLevels = (playing, title) => {
+      if (!playing) return new Array(LEVEL_COUNT).fill(0.15);
+      const seed = seedOf(title || "");
+      const out = [];
+      for (let i = 0; i < LEVEL_COUNT; i++) {
+        const v = 0.5 + 0.35 * Math.sin(tick * 0.9 + i * 1.7 + seed) + 0.1 * Math.sin(tick * 2.3 + i * 0.6);
+        out.push(Math.max(0.1, Math.min(1, v)));
+      }
+      return out;
+    };
+    const push = () => {
+      try {
+        const s = store.getState();
+        const media = s.currentMedia;
+        const title = media && media.title ? String(media.title) : "";
+        const playing = !!(media && title && media.isPlaying);
+        const dict = BAR_TEXT[s.language] || BAR_TEXT.en;
+        const label = (title ? playing ? dict.playing : dict.paused : dict.idle).replace("{title}", title);
+        ext.setBarItemState(BAR_ID, {
+          label,
+          levels: buildLevels(playing, title),
+          playing,
+          icon: playing ? "pause" : "play_arrow"
+        });
+      } catch (e) {
+      }
+    };
+    const stopTimer = () => {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    };
+    const sync = () => {
+      const media = store.getState().currentMedia;
+      const playing = !!(media && media.title && media.isPlaying);
+      if (visible && playing) {
+        if (!timer) timer = setInterval(() => {
+          tick += 1;
+          push();
+        }, 250);
+      } else {
+        stopTimer();
+      }
+      push();
+    };
+    let lastKey = "";
+    store.subscribe((s) => {
+      const m = s.currentMedia;
+      const key = `${m && m.title}|${m && m.isPlaying}|${s.language}`;
+      if (key === lastKey) return;
+      lastKey = key;
+      sync();
+    });
+    if (typeof ext.onBarItemChange === "function") {
+      ext.onBarItemChange(BAR_ID, (info) => {
+        visible = !info || info.visible !== false;
+        sync();
+      });
+    } else {
+      sync();
+    }
+  })();
   function urlShortLabel(url) {
     try {
       const u = new URL(url);
@@ -188,12 +335,12 @@
   };
   const KoPlayerPopup = ({ onClose, anchorRect }) => {
     const edgePosition = useAppStore((state) => state.edgePosition);
-    const design = useAppStore((state) => state.design);
-    const glassOpacity = useAppStore((state) => state.glassOpacity);
+    useAppStore((state) => state.design);
+    useAppStore((state) => state.glassOpacity);
     const currentMedia = useAppStore((state) => state.currentMedia);
     const screenBounds = useAppStore((state) => state.screenBounds);
     const isSmartPositioning = useAppStore((state) => state.isPopupSmartPositioning);
-    const isMac = useAppStore((state) => state.isMac);
+    useAppStore((state) => state.isMac);
     const currentLang = useAppStore((state) => state.language) || "en";
     const t = (key) => {
       const langDict = TRANSLATIONS[currentLang] || TRANSLATIONS["en"];
@@ -244,8 +391,8 @@
     const orientation = useAppStore((state) => state.orientation);
     const getPopupStyle = () => {
       if (!anchorRect) return { display: "none" };
-      const popupHeight = 290;
-      const popupWidth = 288;
+      const popupHeight = 480;
+      const popupWidth = 320;
       const screenHeight = screenBounds?.height ?? 800;
       const screenWidth = screenBounds?.width ?? 1200;
       const offsetTop = sidebarPosition ? sidebarPosition.y : 0;
@@ -308,8 +455,8 @@
         if (!popupRef.current || !anchorRect || !isSmartRef.current) return;
         const newX = e.detail.x;
         const newY = e.detail.y;
-        const popupHeight = 290;
-        const popupWidth = 288;
+        const popupHeight = 480;
+        const popupWidth = 320;
         const screenXInViewport = (screenBounds?.x ?? 0) - window.screenX;
         const screenYInViewport = (screenBounds?.y ?? 0) - window.screenY;
         if (orientation === "horizontal") {
@@ -374,158 +521,113 @@
       setManualUrl("");
     };
     const hasMedia = currentMedia && currentMedia.title;
-    const getPipBtnClass = () => {
-      if (pipActive) return "bg-primary/20 text-primary";
-      if (pipPhase === "detecting") return "bg-indigo-500/10 text-indigo-300 border border-indigo-500/20";
-      return "bg-white/5 text-slate-400 hover:text-white hover:bg-white/10";
-    };
+    const T_SHELL = "var(--kb-bg-shell, var(--theme-bg-dark, #161922))";
+    const T_SURFACE = "var(--kb-bg-surface, var(--theme-surface, #1d212b))";
+    const T_INSET = "var(--kb-bg-inset, rgba(0,0,0,.25))";
+    const T_CONTAINER = "var(--kb-bg-container, var(--theme-accent-glow, rgba(255,255,255,.1)))";
+    const T_ON_CONTAINER = "var(--kb-on-container, #fff)";
+    const T_ACCENT = "var(--kb-accent, var(--theme-accent, #7c9cff))";
+    const T_ON_ACCENT = "var(--kb-on-accent, #fff)";
+    const T_FG1 = "var(--kb-fg-1, #fff)";
+    const T_FG2 = "var(--kb-fg-2, #aab)";
+    const T_FG3 = "var(--kb-fg-3, #778)";
+    const circleBtn = { background: T_CONTAINER, color: T_ON_CONTAINER, width: 44, height: 44, borderRadius: 22, border: 0, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" };
+    const smallCircle = { background: T_INSET, color: T_FG1, width: 36, height: 36, borderRadius: 18, border: 0, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" };
+    react.useEffect(() => {
+      const onKey = (e) => {
+        if (e.key === "Escape") onClose();
+      };
+      document.addEventListener("keydown", onKey);
+      return () => document.removeEventListener("keydown", onKey);
+    }, [onClose]);
+    const pipTitle = pipActive ? t("closePip") : hasPreCachedVideo ? t("videoDetected") : t("openPipTooltip");
+    const pipBtnStyle = pipActive ? { ...smallCircle, background: T_ACCENT, color: T_ON_ACCENT } : smallCircle;
     return /* @__PURE__ */ window.React.createElement(
       "div",
       {
         ref: popupRef,
-        className: "w-72 border shadow-2xl pointer-events-auto animate-in fade-in zoom-in duration-200 overflow-hidden flex flex-col rounded-xl",
+        className: "pointer-events-auto flex flex-col",
         style: {
           ...getPopupStyle(),
-          backgroundColor: design === "style2" ? `color-mix(in srgb, var(--theme-surface) ${glassOpacity}%, transparent)` : "var(--theme-surface)",
-          borderColor: design === "style2" ? "rgba(255, 255, 255, 0.1)" : "var(--theme-border)",
-          backdropFilter: design === "style2" ? isMac ? "blur(8px)" : "blur(20px)" : "none",
-          WebkitBackdropFilter: design === "style2" ? isMac ? "blur(8px)" : "blur(20px)" : "none"
+          boxSizing: "border-box",
+          width: 320,
+          padding: 20,
+          borderRadius: 32,
+          background: T_SHELL,
+          border: "1px solid var(--kb-stroke-subtle, var(--theme-border))",
+          boxShadow: "var(--kb-shadow-e3, 0 12px 32px rgba(0,0,0,.45))",
+          color: T_FG1,
+          overflow: "hidden"
         }
       },
-      hasMedia && currentMedia.albumArt && /* @__PURE__ */ window.React.createElement("div", { className: "absolute inset-0 overflow-hidden rounded-xl", style: { zIndex: 0 } }, /* @__PURE__ */ window.React.createElement(
-        "img",
+      /* @__PURE__ */ window.React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 12, marginBottom: 16 } }, /* @__PURE__ */ window.React.createElement("div", { style: { background: T_CONTAINER, width: 44, height: 44, borderRadius: 15, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 } }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: { ...iconStyle(24, 1), color: T_ACCENT } }, "music_note")), /* @__PURE__ */ window.React.createElement("h3", { style: { flex: 1, minWidth: 0, margin: 0, fontSize: 19, fontWeight: 600, fontFamily: "var(--kb-font-display, inherit)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } }, "KoPlayer"), /* @__PURE__ */ window.React.createElement("button", { type: "button", onClick: handlePipClick, title: pipTitle, "aria-label": pipTitle, className: "no-drag-region", style: pipBtnStyle }, pipPhase === "detecting" ? /* @__PURE__ */ window.React.createElement("div", { style: { width: 16, height: 16, borderRadius: "50%", border: "2px solid var(--kb-stroke-control, rgba(255,255,255,.25))", borderTopColor: T_ACCENT, animation: "koplayer-spin 0.7s linear infinite" } }) : /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: iconStyle(20) }, pipActive ? "pip_exit" : "pip")), /* @__PURE__ */ window.React.createElement("button", { type: "button", onClick: onClose, "aria-label": t("close"), className: "no-drag-region", style: smallCircle }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: iconStyle(20) }, "close"))),
+      (pipPhase === "manual" || pipPhase === "pick") && /* @__PURE__ */ window.React.createElement("div", { className: "no-drag-region", style: { background: T_SURFACE, borderRadius: 24, padding: 16, marginBottom: 16 } }, detectedUrls.length > 0 && /* @__PURE__ */ window.React.createElement("div", { style: { marginBottom: 12 } }, /* @__PURE__ */ window.React.createElement("span", { style: { fontSize: 12, color: T_FG2, display: "block", marginBottom: 8 } }, t("detectedYouTubeTabs")), /* @__PURE__ */ window.React.createElement("div", { style: { maxHeight: 120, overflowY: "auto" }, className: "custom-scrollbar pb-1" }, detectedUrls.map((url, i) => /* @__PURE__ */ window.React.createElement(DetectedTabItem, { key: i, url, onPick: handlePickUrl })))), /* @__PURE__ */ window.React.createElement("p", { style: { fontSize: 12, color: T_FG2, margin: "0 0 8px" } }, t("pasteVideoUrl")), /* @__PURE__ */ window.React.createElement("div", { style: { display: "flex", gap: 8 } }, /* @__PURE__ */ window.React.createElement(
+        "input",
         {
-          src: currentMedia.albumArt,
-          alt: "",
-          className: "w-full h-full object-cover",
-          style: { filter: "blur(40px) brightness(0.3) saturate(1.5)", transform: "scale(1.5)" },
-          draggable: false
+          type: "text",
+          value: manualUrl,
+          onChange: (e) => setManualUrl(e.target.value),
+          onKeyDown: (e) => e.key === "Enter" && handleManualOpen(),
+          placeholder: "https://youtube.com/watch?v=…",
+          style: { flex: 1, minWidth: 0, height: 40, borderRadius: 16, padding: "0 12px", fontSize: 13, background: T_INSET, border: 0, outline: "none", color: T_FG1, userSelect: "text", WebkitUserSelect: "text" },
+          autoFocus: true
         }
-      ), /* @__PURE__ */ window.React.createElement("div", { className: "absolute inset-0 bg-black/40" })),
-      /* @__PURE__ */ window.React.createElement("div", { className: "relative flex flex-col", style: { zIndex: 1 } }, /* @__PURE__ */ window.React.createElement("div", { className: "flex justify-between items-center px-4 pt-3 pb-1" }, /* @__PURE__ */ window.React.createElement("div", { className: "flex items-center gap-1.5" }, /* @__PURE__ */ window.React.createElement("div", { className: "relative inline-flex items-center justify-center text-[16px] text-primary", style: { width: "1em", height: "1em" } }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined absolute left-1/2 top-1/2", style: { fontSize: "0.85em", transform: "translate(-60%, -60%)", opacity: 0.6 } }, "movie"), /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined absolute left-1/2 top-1/2", style: { fontSize: "0.9em", transform: "translate(-40%, -40%)" } }, "music_note")), /* @__PURE__ */ window.React.createElement("span", { className: "text-[10px] uppercase tracking-wider text-slate-400 font-bold ml-1" }, "KoPlayer")), /* @__PURE__ */ window.React.createElement("div", { className: "flex items-center gap-1.5" }, /* @__PURE__ */ window.React.createElement(
-        "button",
-        {
-          onClick: handlePipClick,
-          className: `relative w-6 h-6 rounded-full flex items-center justify-center transition-all no-drag-region ${getPipBtnClass()}`,
-          title: pipActive ? t("closePip") : hasPreCachedVideo ? t("videoDetected") : t("openPipTooltip")
-        },
-        pipPhase === "detecting" ? /* @__PURE__ */ window.React.createElement("div", { style: {
-          width: 12,
-          height: 12,
-          borderRadius: "50%",
-          border: "1.5px solid rgba(165,180,252,0.3)",
-          borderTop: "1.5px solid #a5b4fc",
-          animation: "koplayer-spin 0.7s linear infinite"
-        } }) : /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-[14px]" }, pipActive ? "pip_exit" : "pip"),
-        hasPreCachedVideo && !pipActive && pipPhase !== "detecting" && /* @__PURE__ */ window.React.createElement("span", { style: {
-          position: "absolute",
-          top: 1,
-          right: 1,
-          width: 5,
-          height: 5,
-          borderRadius: "50%",
-          background: "#4ade80",
-          boxShadow: "0 0 4px rgba(74,222,128,0.7)"
-        } })
       ), /* @__PURE__ */ window.React.createElement(
         "button",
         {
-          onClick: onClose,
-          className: "w-6 h-6 rounded-full bg-white/5 text-slate-400 hover:text-white hover:bg-red-500/20 flex items-center justify-center transition-all no-drag-region"
+          type: "button",
+          onClick: handleManualOpen,
+          disabled: !manualUrl.trim(),
+          style: { height: 40, padding: "0 16px", borderRadius: 20, border: 0, fontSize: 13, fontWeight: 600, cursor: "pointer", background: T_ACCENT, color: T_ON_ACCENT, opacity: manualUrl.trim() ? 1 : 0.4 }
         },
-        /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-[14px]" }, "close")
-      ))), (pipPhase === "manual" || pipPhase === "pick") && /* @__PURE__ */ window.React.createElement(
-        "div",
+        t("openBtn")
+      )), /* @__PURE__ */ window.React.createElement(
+        "button",
         {
-          className: "mx-3 mb-2 rounded-lg overflow-hidden no-drag-region",
-          style: { border: "1px solid rgba(255,255,255,0.07)", background: "rgba(0,0,0,0.45)", padding: "10px 12px" }
+          type: "button",
+          onClick: () => setPipPhase("idle"),
+          style: { marginTop: 8, width: "100%", height: 32, border: 0, background: "transparent", color: T_FG2, fontSize: 13, cursor: "pointer" }
         },
-        detectedUrls.length > 0 && /* @__PURE__ */ window.React.createElement("div", { className: "mb-3" }, /* @__PURE__ */ window.React.createElement("span", { className: "text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2 block" }, t("detectedYouTubeTabs")), /* @__PURE__ */ window.React.createElement("div", { style: { maxHeight: 120, overflowY: "auto" }, className: "custom-scrollbar pb-1 -mx-2 px-2" }, detectedUrls.map((url, i) => /* @__PURE__ */ window.React.createElement(DetectedTabItem, { key: i, url, onPick: handlePickUrl })))),
-        /* @__PURE__ */ window.React.createElement("p", { className: "text-[10px] text-slate-500 mb-2 leading-snug" }, t("pasteVideoUrl")),
-        /* @__PURE__ */ window.React.createElement("div", { className: "flex gap-1.5" }, /* @__PURE__ */ window.React.createElement(
-          "input",
-          {
-            type: "text",
-            value: manualUrl,
-            onChange: (e) => setManualUrl(e.target.value),
-            onKeyDown: (e) => e.key === "Enter" && handleManualOpen(),
-            placeholder: "https://youtube.com/watch?v=…",
-            className: "flex-1 rounded-lg px-2.5 py-1.5 text-[11px] text-slate-200 outline-none",
-            style: {
-              background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.1)",
-              userSelect: "text",
-              WebkitUserSelect: "text"
-            },
-            autoFocus: true
-          }
-        ), /* @__PURE__ */ window.React.createElement(
-          "button",
-          {
-            onClick: handleManualOpen,
-            disabled: !manualUrl.trim(),
-            className: "px-2.5 rounded-lg text-[11px] font-semibold transition-all disabled:opacity-40",
-            style: { background: "rgba(244,161,37,0.2)", border: "1px solid rgba(244,161,37,0.4)", color: "#f4a125" }
-          },
-          t("openBtn")
-        )),
-        /* @__PURE__ */ window.React.createElement(
-          "button",
-          {
-            onClick: () => setPipPhase("idle"),
-            className: "mt-2 text-[10px] text-slate-600 hover:text-slate-400 transition-colors w-full text-center"
-          },
-          t("cancelBtn")
-        )
-      ), hasMedia ? /* @__PURE__ */ window.React.createElement(window.React.Fragment, null, /* @__PURE__ */ window.React.createElement("div", { className: "flex flex-col items-center px-5 pt-3 pb-2" }, /* @__PURE__ */ window.React.createElement("div", { className: "w-28 h-28 rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.5)] mb-4 border border-white/10 shrink-0" }, currentMedia.albumArt ? /* @__PURE__ */ window.React.createElement(
+        t("cancelBtn")
+      )),
+      hasMedia ? /* @__PURE__ */ window.React.createElement(window.React.Fragment, null, /* @__PURE__ */ window.React.createElement("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 20 } }, /* @__PURE__ */ window.React.createElement("div", { style: { width: 160, height: 160, borderRadius: 24, overflow: "hidden", background: T_SURFACE, marginBottom: 16, flexShrink: 0 } }, currentMedia.albumArt ? /* @__PURE__ */ window.React.createElement(
         "img",
         {
           src: currentMedia.albumArt,
           alt: currentMedia.title,
-          className: "w-full h-full object-cover",
+          style: { width: "100%", height: "100%", objectFit: "cover" },
           draggable: false
         }
-      ) : /* @__PURE__ */ window.React.createElement("div", { className: "w-full h-full bg-gradient-to-br from-primary/30 to-primary/5 flex items-center justify-center" }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-primary text-[40px] opacity-60" }, "album"))), /* @__PURE__ */ window.React.createElement("div", { className: "w-full overflow-hidden relative h-6 flex items-center justify-center" }, /* @__PURE__ */ window.React.createElement(
+      ) : /* @__PURE__ */ window.React.createElement("div", { style: { width: "100%", height: "100%", background: T_CONTAINER, display: "flex", alignItems: "center", justifyContent: "center" } }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: { ...iconStyle(56, 1), color: T_ACCENT } }, "album"))), /* @__PURE__ */ window.React.createElement("div", { style: { width: "100%", overflow: "hidden", position: "relative", height: 30, display: "flex", alignItems: "center", justifyContent: "center" } }, /* @__PURE__ */ window.React.createElement(
         "div",
         {
           ref: titleRef,
-          className: `text-sm font-semibold text-white whitespace-nowrap ${titleOverflows ? "koplayer-marquee" : "text-center w-full truncate"}`
+          className: titleOverflows ? "koplayer-marquee" : "truncate",
+          style: { fontFamily: "var(--kb-font-display, inherit)", fontSize: 22, fontWeight: 600, whiteSpace: "nowrap", textAlign: "center", width: titleOverflows ? void 0 : "100%" }
         },
-        titleOverflows ? /* @__PURE__ */ window.React.createElement(window.React.Fragment, null, /* @__PURE__ */ window.React.createElement("span", null, currentMedia.title), /* @__PURE__ */ window.React.createElement("span", { className: "mx-8 text-slate-500" }, "•"), /* @__PURE__ */ window.React.createElement("span", null, currentMedia.title)) : currentMedia.title
-      )), /* @__PURE__ */ window.React.createElement("div", { className: "w-full overflow-hidden relative h-5 flex items-center justify-center" }, /* @__PURE__ */ window.React.createElement(
+        titleOverflows ? /* @__PURE__ */ window.React.createElement(window.React.Fragment, null, /* @__PURE__ */ window.React.createElement("span", null, currentMedia.title), /* @__PURE__ */ window.React.createElement("span", { style: { margin: "0 32px", color: T_FG3 } }, "•"), /* @__PURE__ */ window.React.createElement("span", null, currentMedia.title)) : currentMedia.title
+      )), /* @__PURE__ */ window.React.createElement("div", { style: { width: "100%", overflow: "hidden", position: "relative", height: 22, display: "flex", alignItems: "center", justifyContent: "center" } }, /* @__PURE__ */ window.React.createElement(
         "div",
         {
           ref: artistRef,
-          className: `text-xs text-slate-400 whitespace-nowrap ${artistOverflows ? "koplayer-marquee" : "text-center w-full truncate"}`
+          className: artistOverflows ? "koplayer-marquee" : "truncate",
+          style: { fontSize: 14, color: T_FG2, whiteSpace: "nowrap", textAlign: "center", width: artistOverflows ? void 0 : "100%" }
         },
-        artistOverflows ? /* @__PURE__ */ window.React.createElement(window.React.Fragment, null, /* @__PURE__ */ window.React.createElement("span", null, currentMedia.artist), /* @__PURE__ */ window.React.createElement("span", { className: "mx-8 text-slate-600" }, "•"), /* @__PURE__ */ window.React.createElement("span", null, currentMedia.artist)) : currentMedia.artist || t("unknownArtist")
-      ))), /* @__PURE__ */ window.React.createElement("div", { className: "flex items-center justify-center gap-3 px-5 pb-4 pt-2" }, /* @__PURE__ */ window.React.createElement(
+        artistOverflows ? /* @__PURE__ */ window.React.createElement(window.React.Fragment, null, /* @__PURE__ */ window.React.createElement("span", null, currentMedia.artist), /* @__PURE__ */ window.React.createElement("span", { style: { margin: "0 32px", color: T_FG3 } }, "•"), /* @__PURE__ */ window.React.createElement("span", null, currentMedia.artist)) : currentMedia.artist || t("unknownArtist")
+      ))), /* @__PURE__ */ window.React.createElement("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", gap: 20 } }, /* @__PURE__ */ window.React.createElement("button", { type: "button", "aria-label": t("previous"), onClick: () => handleCommand("prev"), className: "no-drag-region", style: circleBtn }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: iconStyle(24, 1) }, "skip_previous")), /* @__PURE__ */ window.React.createElement(
         "button",
         {
-          onClick: () => handleCommand("prev"),
-          className: "w-10 h-10 rounded-full bg-white/5 hover:bg-white/15 text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 active:scale-95 no-drag-region"
-        },
-        /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-[22px]" }, "skip_previous")
-      ), /* @__PURE__ */ window.React.createElement(
-        "button",
-        {
+          type: "button",
+          "aria-label": currentMedia.isPlaying ? t("pause") : t("play"),
           onClick: () => handleCommand(currentMedia.isPlaying ? "pause" : "play"),
-          className: "w-14 h-14 rounded-full bg-primary text-slate-900 flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-[0_4px_20px_rgba(244,161,37,0.4)] hover:shadow-[0_4px_25px_rgba(244,161,37,0.6)] no-drag-region"
+          className: "no-drag-region",
+          style: { width: 72, height: 72, borderRadius: 28, border: 0, background: T_ACCENT, color: T_ON_ACCENT, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }
         },
-        /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-[28px]" }, currentMedia.isPlaying ? "pause" : "play_arrow")
-      ), /* @__PURE__ */ window.React.createElement(
-        "button",
-        {
-          onClick: () => handleCommand("next"),
-          className: "w-10 h-10 rounded-full bg-white/5 hover:bg-white/15 text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 active:scale-95 no-drag-region"
-        },
-        /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-[22px]" }, "skip_next")
-      ))) : /* @__PURE__ */ window.React.createElement("div", { className: "flex flex-col items-center justify-center py-10 px-6" }, /* @__PURE__ */ window.React.createElement("div", { className: "w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-4" }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined text-slate-500 text-[32px] koplayer-pulse" }, "music_off")), /* @__PURE__ */ window.React.createElement("p", { className: "text-sm text-slate-400 text-center font-medium" }, t("noMediaPlaying")), /* @__PURE__ */ window.React.createElement("p", { className: "text-xs text-slate-600 text-center mt-1" }, t("playSomething")))),
+        /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: iconStyle(36, 1) }, currentMedia.isPlaying ? "pause" : "play_arrow")
+      ), /* @__PURE__ */ window.React.createElement("button", { type: "button", "aria-label": t("next"), onClick: () => handleCommand("next"), className: "no-drag-region", style: circleBtn }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: iconStyle(24, 1) }, "skip_next")))) : /* @__PURE__ */ window.React.createElement("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "24px 8px" } }, /* @__PURE__ */ window.React.createElement("div", { style: { width: 64, height: 64, borderRadius: 24, background: T_SURFACE, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 } }, /* @__PURE__ */ window.React.createElement("span", { className: "material-symbols-outlined", style: { ...iconStyle(32), color: T_FG3 } }, "music_off")), /* @__PURE__ */ window.React.createElement("p", { style: { margin: 0, fontSize: 15, fontWeight: 600, textAlign: "center" } }, t("noMediaPlaying")), /* @__PURE__ */ window.React.createElement("p", { style: { margin: "4px 0 0", fontSize: 13, color: T_FG2, textAlign: "center" } }, t("playSomething"))),
       /* @__PURE__ */ window.React.createElement("style", null, `
                 .koplayer-marquee { display:inline-block; animation:koplayer-scroll 12s linear infinite; }
                 @keyframes koplayer-scroll { 0%{transform:translateX(0%)} 100%{transform:translateX(-50%)} }
-                .koplayer-pulse { animation:koplayer-icon-pulse 2s ease-in-out infinite; }
-                @keyframes koplayer-icon-pulse { 0%,100%{opacity:0.4;transform:scale(1)} 50%{opacity:0.7;transform:scale(1.08)} }
                 @keyframes koplayer-spin { to{transform:rotate(360deg)} }
             `)
     );
@@ -535,6 +637,7 @@
       id: "koplayer-plugin-panel",
       icon: "music_note",
       label: "KoPlayer",
+      tile: { template: "level", sensitive: true, live: true, pinnable: true },
       onClick: (e, anchorRect) => {
         const store = window.useAppStore.getState();
         if (store.activeExtensionPanelId === "koplayer-plugin-panel") {
