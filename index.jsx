@@ -15,7 +15,9 @@ const TRANSLATIONS = {
         closePip: "Close PIP",
         videoDetected: "Video detected — open in PiP",
         openPipTooltip: "Open video in Picture-in-Picture",
-        close: "Close", previous: "Previous", next: "Next", play: "Play", pause: "Pause"
+        close: "Close", previous: "Previous", next: "Next", play: "Play", pause: "Pause",
+        pictureInPicture: "Picture in picture", statePlaying: "Playing", statePaused: "Paused",
+        pipActiveNote: "Video is open in a floating window"
     },
     tr: {
         noMediaPlaying: "Medya oynatılmıyor",
@@ -29,7 +31,9 @@ const TRANSLATIONS = {
         closePip: "PIP Kapat",
         videoDetected: "Video algılandı — PiP'te aç",
         openPipTooltip: "Videoyu Resim-İçinde-Resim modunda aç",
-        close: "Kapat", previous: "Önceki", next: "Sonraki", play: "Oynat", pause: "Duraklat"
+        close: "Kapat", previous: "Önceki", next: "Sonraki", play: "Oynat", pause: "Duraklat",
+        pictureInPicture: "Resim içinde resim", statePlaying: "Çalıyor", statePaused: "Duraklatıldı",
+        pipActiveNote: "Video yüzen pencerede açık"
     },
     de: {
         noMediaPlaying: "Keine Medienwiedergabe",
@@ -43,7 +47,9 @@ const TRANSLATIONS = {
         closePip: "PIP schließen",
         videoDetected: "Video erkannt — in PiP öffnen",
         openPipTooltip: "Video in Bild-in-Bild öffnen",
-        close: "Schließen", previous: "Zurück", next: "Weiter", play: "Wiedergabe", pause: "Pause"
+        close: "Schließen", previous: "Zurück", next: "Weiter", play: "Wiedergabe", pause: "Pause",
+        pictureInPicture: "Bild-in-Bild", statePlaying: "Wiedergabe", statePaused: "Pausiert",
+        pipActiveNote: "Video ist in einem schwebenden Fenster geöffnet"
     },
     ar: {
         noMediaPlaying: "لا يوجد وسائط قيد التشغيل",
@@ -57,7 +63,9 @@ const TRANSLATIONS = {
         closePip: "إغلاق PIP",
         videoDetected: "تم اكتشاف فيديو — فتح في PiP",
         openPipTooltip: "فتح الفيديو في وضع صورة داخل صورة",
-        close: "إغلاق", previous: "السابق", next: "التالي", play: "تشغيل", pause: "إيقاف مؤقت"
+        close: "إغلاق", previous: "السابق", next: "التالي", play: "تشغيل", pause: "إيقاف مؤقت",
+        pictureInPicture: "صورة داخل صورة", statePlaying: "قيد التشغيل", statePaused: "متوقف مؤقتًا",
+        pipActiveNote: "الفيديو مفتوح في نافذة عائمة"
     },
     zh: {
         noMediaPlaying: "没有播放媒体",
@@ -71,7 +79,9 @@ const TRANSLATIONS = {
         closePip: "关闭画中画",
         videoDetected: "检测到视频 — 在画中画中打开",
         openPipTooltip: "在画中画中打开视频",
-        close: "关闭", previous: "上一首", next: "下一首", play: "播放", pause: "暂停"
+        close: "关闭", previous: "上一首", next: "下一首", play: "播放", pause: "暂停",
+        pictureInPicture: "画中画", statePlaying: "正在播放", statePaused: "已暂停",
+        pipActiveNote: "视频已在悬浮窗口中打开"
     },
     fr: {
         noMediaPlaying: "Aucun média en cours",
@@ -85,7 +95,9 @@ const TRANSLATIONS = {
         closePip: "Fermer PIP",
         videoDetected: "Vidéo détectée — ouvrir en PiP",
         openPipTooltip: "Ouvrir la vidéo en mode Image dans l'image",
-        close: "Fermer", previous: "Précédent", next: "Suivant", play: "Lecture", pause: "Pause"
+        close: "Fermer", previous: "Précédent", next: "Suivant", play: "Lecture", pause: "Pause",
+        pictureInPicture: "Image dans l'image", statePlaying: "En lecture", statePaused: "En pause",
+        pipActiveNote: "La vidéo est ouverte dans une fenêtre flottante"
     },
     hi: {
         noMediaPlaying: "कोई मीडिया नहीं चल रहा है",
@@ -99,7 +111,9 @@ const TRANSLATIONS = {
         closePip: "पीआईपी बंद करें",
         videoDetected: "वीडियो का पता चला - PiP में खोलें",
         openPipTooltip: "पिक्चर-इन-पिक्चर में वीडियो खोलें",
-        close: "बंद करें", previous: "पिछला", next: "अगला", play: "चलाएं", pause: "रोकें"
+        close: "बंद करें", previous: "पिछला", next: "अगला", play: "चलाएं", pause: "रोकें",
+        pictureInPicture: "पिक्चर-इन-पिक्चर", statePlaying: "चल रहा है", statePaused: "रुका हुआ",
+        pipActiveNote: "वीडियो फ़्लोटिंग विंडो में खुला है"
     },
     es: {
         noMediaPlaying: "No se reproduce multimedia",
@@ -113,7 +127,9 @@ const TRANSLATIONS = {
         closePip: "Cerrar PIP",
         videoDetected: "Video detectado — abrir en PiP",
         openPipTooltip: "Abrir video en Picture-in-Picture",
-        close: "Cerrar", previous: "Anterior", next: "Siguiente", play: "Reproducir", pause: "Pausa"
+        close: "Cerrar", previous: "Anterior", next: "Siguiente", play: "Reproducir", pause: "Pausa",
+        pictureInPicture: "Imagen en imagen", statePlaying: "Reproduciendo", statePaused: "En pausa",
+        pipActiveNote: "El video está abierto en una ventana flotante"
     },
     ja: {
         noMediaPlaying: "メディアが再生されていません",
@@ -127,7 +143,9 @@ const TRANSLATIONS = {
         closePip: "PIPを閉じる",
         videoDetected: "動画を検出しました — PiPで開く",
         openPipTooltip: "ピクチャーインピクチャーで動画を開く",
-        close: "閉じる", previous: "前へ", next: "次へ", play: "再生", pause: "一時停止"
+        close: "閉じる", previous: "前へ", next: "次へ", play: "再生", pause: "一時停止",
+        pictureInPicture: "ピクチャーインピクチャー", statePlaying: "再生中", statePaused: "一時停止中",
+        pipActiveNote: "動画をフローティングウィンドウで開いています"
     },
     ru: {
         noMediaPlaying: "Нет воспроизводимого медиа",
@@ -141,7 +159,9 @@ const TRANSLATIONS = {
         closePip: "Закрыть PIP",
         videoDetected: "Видео обнаружено — открыть в PiP",
         openPipTooltip: "Открыть видео в режиме 'Картинка в картинке'",
-        close: "Закрыть", previous: "Назад", next: "Далее", play: "Воспроизвести", pause: "Пауза"
+        close: "Закрыть", previous: "Назад", next: "Далее", play: "Воспроизвести", pause: "Пауза",
+        pictureInPicture: "Картинка в картинке", statePlaying: "Играет", statePaused: "Пауза",
+        pipActiveNote: "Видео открыто в плавающем окне"
     }
 };
 
@@ -247,15 +267,25 @@ const BAR_TEXT = {
 })();
 
 
+const SOURCE_NAMES = { chrome: 'Chrome', msedge: 'Edge', brave: 'Brave', firefox: 'Firefox', opera: 'Opera', vivaldi: 'Vivaldi', spotify: 'Spotify' };
+/** Friendly name of the app that owns the current media session (display only). */
+function sourceLabel(app) {
+    const a = String(app || '').toLowerCase();
+    const known = Object.keys(SOURCE_NAMES).find((k) => a.includes(k));
+    if (known) return SOURCE_NAMES[known];
+    const base = a.replace(/\.exe$/, '').split(/[\\/!]/).pop();
+    return base ? base.charAt(0).toUpperCase() + base.slice(1) : '';
+}
+
 /** Get a short display label from a URL */
 function urlShortLabel(url) {
     try {
         const u = new URL(url);
         const host = u.hostname.replace(/^www\./, '');
         // For YouTube, extract video title hint from path/params
-        if (host.includes('youtube') || host === 'youtu.be') return `▶ YouTube: ${u.searchParams.get('v') || u.pathname.slice(1)}`;
-        if (host.includes('youtu.be')) return `▶ YouTube: ${u.pathname.slice(1)}`;
-        return `▶ ${host}${u.pathname.length > 1 ? u.pathname.slice(0, 24) : ''}`;
+        if (host.includes('youtube') || host === 'youtu.be') return `YouTube: ${u.searchParams.get('v') || u.pathname.slice(1)}`;
+        if (host.includes('youtu.be')) return `YouTube: ${u.pathname.slice(1)}`;
+        return `${host}${u.pathname.length > 1 ? u.pathname.slice(0, 24) : ''}`;
     } catch {
         return url.slice(0, 36);
     }
@@ -301,17 +331,17 @@ const DetectedTabItem = ({ url, onPick }) => {
         <button
             onClick={() => onPick(url)}
             className="w-full flex items-center text-left"
-            style={{ gap: 12, minHeight: 48, padding: '4px 8px 4px 4px', marginBottom: 6, border: 0, borderRadius: 16, cursor: 'pointer', background: 'var(--kb-bg-tile, var(--theme-surface, #242833))', color: 'var(--kb-fg-1, #fff)' }}
+            style={{ gap: 12, minHeight: 48, padding: '4px 8px 4px 4px', flexShrink: 0, border: 0, borderRadius: 16, cursor: 'pointer', background: 'var(--kb-bg-tile, var(--theme-surface, #242833))', color: 'var(--kb-fg-1, #fff)' }}
         >
             {thumbnail ? (
                 <div className="overflow-hidden shrink-0 relative flex items-center justify-center" style={{ width: 56, height: 40, borderRadius: 12, background: 'var(--kb-bg-inset, rgba(0,0,0,.25))' }}>
                     <img src={thumbnail} alt="" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                        <span className="material-symbols-outlined text-white text-[14px]">play_arrow</span>
+                        <span className="material-symbols-outlined" style={{ ...iconStyle(16, 1), color: '#fff' }}>play_arrow</span>
                     </div>
                 </div>
             ) : (
-                <span className="material-symbols-outlined shrink-0 text-center" style={{ width: 56, fontSize: 24, color: 'var(--kb-accent, var(--theme-accent, #7c9cff))' }}>play_circle</span>
+                <span className="material-symbols-outlined shrink-0 text-center" style={{ width: 40, fontSize: 24, color: 'var(--kb-accent-text, var(--kb-accent, #7c9cff))' }}>play_circle</span>
             )}
             <span className="truncate" style={{ fontSize: 13, color: 'var(--kb-fg-1, #fff)' }} title={title || urlShortLabel(url)}>
                 {title || urlShortLabel(url)}
@@ -527,18 +557,21 @@ const KoPlayerPopup = ({ onClose, anchorRect }) => {
     const hasMedia = currentMedia && currentMedia.title;
 
     const T_SHELL = 'var(--kb-bg-shell, var(--theme-bg-dark, #161922))';
-    const T_SURFACE = 'var(--kb-bg-surface, var(--theme-surface, #1d212b))';
+    const T_SURFACE = 'var(--kb-bg-surface, var(--theme-bg-base, #1d212b))';
     const T_INSET = 'var(--kb-bg-inset, rgba(0,0,0,.25))';
-    const T_CONTAINER = 'var(--kb-bg-container, var(--theme-accent-glow, rgba(255,255,255,.1)))';
+    const T_CONTAINER = 'var(--kb-bg-container, rgba(255,255,255,.1))';
     const T_ON_CONTAINER = 'var(--kb-on-container, #fff)';
     const T_ACCENT = 'var(--kb-accent, var(--theme-accent, #7c9cff))';
+    const T_ACCENT_TEXT = 'var(--kb-accent-text, var(--kb-accent, #7c9cff))';
     const T_ON_ACCENT = 'var(--kb-on-accent, #fff)';
     const T_FG1 = 'var(--kb-fg-1, #fff)';
     const T_FG2 = 'var(--kb-fg-2, #aab)';
     const T_FG3 = 'var(--kb-fg-3, #778)';
 
-    const circleBtn = { background: T_CONTAINER, color: T_ON_CONTAINER, width: 44, height: 44, borderRadius: 22, border: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' };
+    const circleBtn = { background: T_CONTAINER, color: T_ON_CONTAINER, width: 48, height: 48, borderRadius: 24, border: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' };
     const smallCircle = { background: T_CONTAINER, color: T_ON_CONTAINER, width: 36, height: 36, borderRadius: 18, border: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' };
+    const tonalPill = { height: 36, padding: '0 16px', borderRadius: 18, border: 0, fontSize: 13, fontWeight: 600, cursor: 'pointer', background: T_CONTAINER, color: T_ON_CONTAINER, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 };
+    const card = { background: T_SURFACE, borderRadius: 24, padding: 16 };
 
     useEffect(() => {
         const onKey = (e) => { if (e.key === 'Escape') onClose(); };
@@ -547,19 +580,30 @@ const KoPlayerPopup = ({ onClose, anchorRect }) => {
     }, [onClose]);
 
     const pipTitle = pipActive ? t('closePip') : hasPreCachedVideo ? t('videoDetected') : t('openPipTooltip');
-    const pipBtnStyle = pipActive
-        ? { ...smallCircle, background: T_ACCENT, color: T_ON_ACCENT }
-        : smallCircle;
+    const sourceName = sourceLabel(currentMediaSourceApp);
+    const subtitle = hasMedia
+        ? [currentMedia.isPlaying ? t('statePlaying') : t('statePaused'), sourceName].filter(Boolean).join(' · ')
+        : t('noMediaPlaying');
+    // Long text: title wraps to two lines, artist stays on one; both end with an ellipsis and carry the full text in title.
+    const marquee = (ref, overflows, text, size, color, weight, display) => (
+        <div ref={ref} title={text || ''}
+            style={{ width: '100%', minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', overflowWrap: 'anywhere',
+                fontFamily: display ? 'var(--kb-font-display, inherit)' : undefined, fontSize: size, lineHeight: size <= 14 ? '20px' : '22px', fontWeight: weight, color,
+                ...(display ? { display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: 2 } : { whiteSpace: 'nowrap' }) }}>
+            {text}
+        </div>
+    );
 
     return (
         <div
             ref={popupRef}
-            className="pointer-events-auto flex flex-col"
+            className="kop-panel pointer-events-auto flex flex-col"
             style={{
                 ...getPopupStyle(),
                 boxSizing: 'border-box',
                 width: 320,
                 padding: 20,
+                gap: 16,
                 borderRadius: 32,
                 background: T_SHELL,
                 border: '1px solid var(--kb-stroke-subtle, var(--theme-border))',
@@ -568,127 +612,127 @@ const KoPlayerPopup = ({ onClose, anchorRect }) => {
                 overflow: 'hidden'
             }}
         >
-            {/* Header */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
-                <div style={{ background: T_CONTAINER, width: 44, height: 44, borderRadius: 15, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <span className="material-symbols-outlined" style={{ ...iconStyle(24, 1), color: T_ACCENT }}>music_note</span>
+            {/* Header: what is playing and where it comes from */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <div style={{ background: T_CONTAINER, width: 44, height: 44, borderRadius: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <span className="material-symbols-outlined" style={{ ...iconStyle(24, 1), color: T_ACCENT_TEXT }}>music_note</span>
                 </div>
-                <h3 style={{ flex: 1, minWidth: 0, margin: 0, fontSize: 19, fontWeight: 600, fontFamily: 'var(--kb-font-display, inherit)' }}>KoPlayer</h3>
-                <button type="button" onClick={handlePipClick} title={pipTitle} aria-label={pipTitle} className="no-drag-region" style={pipBtnStyle}>
-                    {pipPhase === 'detecting' ? (
-                        <div style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid var(--kb-stroke-control, rgba(255,255,255,.25))', borderTopColor: T_ACCENT, animation: 'koplayer-spin 0.7s linear infinite' }} />
-                    ) : (
-                        <span className="material-symbols-outlined" style={iconStyle(20)}>{pipActive ? 'pip_exit' : 'pip'}</span>
-                    )}
-                </button>
-                <button type="button" onClick={onClose} aria-label={t('close')} className="no-drag-region" style={smallCircle}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                    <h3 style={{ margin: 0, fontSize: 19, lineHeight: '24px', fontWeight: 600, fontFamily: 'var(--kb-font-display, inherit)' }}>KoPlayer</h3>
+                    <div className="truncate" style={{ fontSize: 12, lineHeight: '16px', color: T_FG2 }}>{subtitle}</div>
+                </div>
+                <button type="button" onClick={onClose} aria-label={t('close')} title={t('close')} className="no-drag-region" style={smallCircle}>
                     <span className="material-symbols-outlined" style={iconStyle(20)}>close</span>
                 </button>
             </div>
 
-            {/* Manual URL input and detected tabs */}
-            {(pipPhase === 'manual' || pipPhase === 'pick') && (
-                <div className="no-drag-region" style={{ background: T_SURFACE, borderRadius: 24, padding: 16, marginBottom: 16 }}>
-                    {detectedUrls.length > 0 && (
-                        <div style={{ marginBottom: 12 }}>
-                            <span style={{ fontSize: 12, color: T_FG2, display: 'block', marginBottom: 8 }}>{t('detectedYouTubeTabs')}</span>
-                            <div style={{ maxHeight: 120, overflowY: 'auto' }} className="custom-scrollbar pb-1">
-                                {detectedUrls.map((url, i) => (
-                                    <DetectedTabItem key={i} url={url} onPick={handlePickUrl} />
-                                ))}
+            {/* Now playing */}
+            <div className="no-drag-region" style={card}>
+                {hasMedia ? (
+                    <>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                            <div style={{ width: 96, height: 96, borderRadius: 16, overflow: 'hidden', background: T_INSET, flexShrink: 0 }}>
+                                {currentMedia.albumArt ? (
+                                    <img src={currentMedia.albumArt} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} draggable={false} />
+                                ) : (
+                                    <div style={{ width: '100%', height: '100%', background: T_CONTAINER, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <span className="material-symbols-outlined" style={{ ...iconStyle(40, 1), color: T_ACCENT_TEXT }}>album</span>
+                                    </div>
+                                )}
+                            </div>
+                            <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 4 }}>
+                                {marquee(titleRef, titleOverflows, currentMedia.title, 17, T_FG1, 600, true)}
+                                {marquee(artistRef, artistOverflows, artistOverflows ? currentMedia.artist : (currentMedia.artist || t('unknownArtist')), 13, T_FG2, 400, false)}
                             </div>
                         </div>
-                    )}
-                    <p style={{ fontSize: 12, color: T_FG2, margin: '0 0 8px' }}>{t('pasteVideoUrl')}</p>
-                    <div style={{ display: 'flex', gap: 8 }}>
-                        <input
-                            type="text"
-                            value={manualUrl}
-                            onChange={e => setManualUrl(e.target.value)}
-                            onKeyDown={e => e.key === 'Enter' && handleManualOpen()}
-                            placeholder="https://youtube.com/watch?v=…"
-                            style={{ flex: 1, minWidth: 0, height: 40, borderRadius: 16, padding: '0 12px', fontSize: 13, background: T_INSET, border: 0, outline: 'none', color: T_FG1, userSelect: 'text', WebkitUserSelect: 'text' }}
-                            autoFocus
-                        />
-                        <button
-                            type="button"
-                            onClick={handleManualOpen}
-                            disabled={!manualUrl.trim()}
-                            style={{ height: 40, padding: '0 16px', borderRadius: 20, border: 0, fontSize: 13, fontWeight: 600, cursor: 'pointer', background: T_ACCENT, color: T_ON_ACCENT, opacity: manualUrl.trim() ? 1 : 0.4 }}
-                        >
-                            {t('openBtn')}
-                        </button>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, marginTop: 16 }}>
+                            <button type="button" aria-label={t('previous')} title={t('previous')} onClick={() => handleCommand('prev')} className="no-drag-region" style={circleBtn}>
+                                <span className="material-symbols-outlined" style={iconStyle(24, 1)}>skip_previous</span>
+                            </button>
+                            <button type="button" aria-label={currentMedia.isPlaying ? t('pause') : t('play')} title={currentMedia.isPlaying ? t('pause') : t('play')} onClick={() => handleCommand(currentMedia.isPlaying ? 'pause' : 'play')} className="no-drag-region"
+                                style={{ width: 72, height: 56, borderRadius: 28, border: 0, background: T_ACCENT, color: T_ON_ACCENT, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                                <span className="material-symbols-outlined" style={iconStyle(32, 1)}>{currentMedia.isPlaying ? 'pause' : 'play_arrow'}</span>
+                            </button>
+                            <button type="button" aria-label={t('next')} title={t('next')} onClick={() => handleCommand('next')} className="no-drag-region" style={circleBtn}>
+                                <span className="material-symbols-outlined" style={iconStyle(24, 1)}>skip_next</span>
+                            </button>
+                        </div>
+                    </>
+                ) : (
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '16px 8px', textAlign: 'center' }}>
+                        <div style={{ width: 64, height: 64, borderRadius: 24, background: T_CONTAINER, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                            <span className="material-symbols-outlined" style={{ ...iconStyle(32), color: T_ACCENT_TEXT }}>music_off</span>
+                        </div>
+                        <div style={{ fontFamily: 'var(--kb-font-display, inherit)', fontSize: 17, fontWeight: 600 }}>{t('noMediaPlaying')}</div>
+                        <div style={{ fontSize: 13, lineHeight: '20px', color: T_FG2, marginTop: 4 }}>{t('playSomething')}</div>
                     </div>
-                    <button type="button" onClick={() => setPipPhase('idle')}
-                        style={{ marginTop: 8, width: '100%', height: 32, border: 0, background: 'transparent', color: T_FG2, fontSize: 13, cursor: 'pointer' }}>
-                        {t('cancelBtn')}
+                )}
+            </div>
+
+            {/* Picture in picture: always available, expands to detected tabs and a URL field */}
+            <div className="no-drag-region" style={card}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 14, background: pipActive ? T_ACCENT : T_CONTAINER, color: pipActive ? T_ON_ACCENT : T_ACCENT_TEXT, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <span className="material-symbols-outlined" style={iconStyle(22, pipActive ? 1 : 0)}>{pipActive ? 'pip_exit' : 'pip'}</span>
+                    </div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{ fontSize: 15, lineHeight: '20px', fontWeight: 600 }}>{t('pictureInPicture')}</div>
+                        <div style={{ fontSize: 12, lineHeight: '16px', color: T_FG2 }}>{pipActive ? t('pipActiveNote') : hasPreCachedVideo ? t('videoDetected') : t('openPipTooltip')}</div>
+                    </div>
+                    <button type="button" onClick={handlePipClick} title={pipTitle} aria-label={pipTitle} className="no-drag-region" style={{ ...tonalPill, minWidth: 64 }}>
+                        {pipPhase === 'detecting' ? (
+                            <div style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid var(--kb-stroke-control, rgba(255,255,255,.25))', borderTopColor: T_ACCENT, animation: 'koplayer-spin 0.7s linear infinite' }} />
+                        ) : (pipActive ? t('closePip') : t('openBtn'))}
                     </button>
                 </div>
-            )}
 
-            {/* Main media content */}
-            {hasMedia ? (
-                <>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 20 }}>
-                        <div style={{ width: 160, height: 160, borderRadius: 24, overflow: 'hidden', background: T_SURFACE, marginBottom: 16, flexShrink: 0 }}>
-                            {currentMedia.albumArt ? (
-                                <img src={currentMedia.albumArt} alt={currentMedia.title}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} draggable={false} />
-                            ) : (
-                                <div style={{ width: '100%', height: '100%', background: T_CONTAINER, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <span className="material-symbols-outlined" style={{ ...iconStyle(56, 1), color: T_ACCENT }}>album</span>
+                {(pipPhase === 'manual' || pipPhase === 'pick') && (
+                    <div style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid var(--kb-stroke-subtle, rgba(255,255,255,.12))' }}>
+                        {detectedUrls.length > 0 && (
+                            <div style={{ marginBottom: 16 }}>
+                                <span style={{ fontSize: 12, lineHeight: '16px', color: T_FG2, display: 'block', marginBottom: 8 }}>{t('detectedYouTubeTabs')}</span>
+                                <div style={{ maxHeight: 136, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: 4 }} className="custom-scrollbar">
+                                    {detectedUrls.map((url, i) => (
+                                        <DetectedTabItem key={i} url={url} onPick={handlePickUrl} />
+                                    ))}
                                 </div>
-                            )}
-                        </div>
-
-                        <div style={{ width: '100%', overflow: 'hidden', position: 'relative', height: 30, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div ref={titleRef}
-                                className={titleOverflows ? 'koplayer-marquee' : 'truncate'}
-                                style={{ fontFamily: 'var(--kb-font-display, inherit)', fontSize: 22, fontWeight: 600, whiteSpace: 'nowrap', textAlign: 'center', width: titleOverflows ? undefined : '100%' }}>
-                                {titleOverflows ? (
-                                    <><span>{currentMedia.title}</span><span style={{ margin: '0 32px', color: T_FG3 }}>•</span><span>{currentMedia.title}</span></>
-                                ) : currentMedia.title}
                             </div>
+                        )}
+                        <label style={{ fontSize: 12, lineHeight: '16px', color: T_FG2, display: 'block', marginBottom: 8 }} htmlFor="koplayer-url">{t('pasteVideoUrl')}</label>
+                        <div style={{ display: 'flex', gap: 8 }}>
+                            <input
+                                id="koplayer-url"
+                                type="text"
+                                value={manualUrl}
+                                onChange={e => setManualUrl(e.target.value)}
+                                onKeyDown={e => e.key === 'Enter' && handleManualOpen()}
+                                placeholder="https://youtube.com/watch?v=…"
+                                style={{ flex: 1, minWidth: 0, height: 40, borderRadius: 16, padding: '0 12px', fontSize: 13, background: T_INSET, border: 0, color: T_FG1, userSelect: 'text', WebkitUserSelect: 'text' }}
+                                autoFocus
+                            />
+                            <button
+                                type="button"
+                                onClick={handleManualOpen}
+                                disabled={!manualUrl.trim()}
+                                style={{ ...tonalPill, height: 40, borderRadius: 20, opacity: manualUrl.trim() ? 1 : 0.4, cursor: manualUrl.trim() ? 'pointer' : 'default' }}
+                            >
+                                {t('openBtn')}
+                            </button>
                         </div>
-
-                        <div style={{ width: '100%', overflow: 'hidden', position: 'relative', height: 22, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div ref={artistRef}
-                                className={artistOverflows ? 'koplayer-marquee' : 'truncate'}
-                                style={{ fontSize: 14, color: T_FG2, whiteSpace: 'nowrap', textAlign: 'center', width: artistOverflows ? undefined : '100%' }}>
-                                {artistOverflows ? (
-                                    <><span>{currentMedia.artist}</span><span style={{ margin: '0 32px', color: T_FG3 }}>•</span><span>{currentMedia.artist}</span></>
-                                ) : (currentMedia.artist || t('unknownArtist'))}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20 }}>
-                        <button type="button" aria-label={t('previous')} onClick={() => handleCommand('prev')} className="no-drag-region" style={circleBtn}>
-                            <span className="material-symbols-outlined" style={iconStyle(24, 1)}>skip_previous</span>
-                        </button>
-                        <button type="button" aria-label={currentMedia.isPlaying ? t('pause') : t('play')} onClick={() => handleCommand(currentMedia.isPlaying ? 'pause' : 'play')} className="no-drag-region"
-                            style={{ width: 72, height: 72, borderRadius: 28, border: 0, background: T_ACCENT, color: T_ON_ACCENT, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-                            <span className="material-symbols-outlined" style={iconStyle(36, 1)}>{currentMedia.isPlaying ? 'pause' : 'play_arrow'}</span>
-                        </button>
-                        <button type="button" aria-label={t('next')} onClick={() => handleCommand('next')} className="no-drag-region" style={circleBtn}>
-                            <span className="material-symbols-outlined" style={iconStyle(24, 1)}>skip_next</span>
+                        <button type="button" onClick={() => setPipPhase('idle')}
+                            style={{ marginTop: 8, width: '100%', height: 36, border: 0, borderRadius: 18, background: 'transparent', color: T_FG2, fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>
+                            {t('cancelBtn')}
                         </button>
                     </div>
-                </>
-            ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px 20px', border: '2px dashed var(--kb-stroke-subtle, var(--theme-border, rgba(255,255,255,.14)))', borderRadius: 28 }}>
-                    <div style={{ width: 64, height: 64, borderRadius: 22, background: T_CONTAINER, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
-                        <span className="material-symbols-outlined" style={{ ...iconStyle(32), color: T_ACCENT }}>music_off</span>
-                    </div>
-                    <p style={{ margin: 0, fontSize: 15, fontWeight: 600, textAlign: 'center' }}>{t('noMediaPlaying')}</p>
-                    <p style={{ margin: '4px 0 0', fontSize: 13, color: T_FG2, textAlign: 'center' }}>{t('playSomething')}</p>
-                </div>
-            )}
+                )}
+            </div>
 
             <style>{`
                 .koplayer-marquee { display:inline-block; animation:koplayer-scroll 12s linear infinite; }
                 @keyframes koplayer-scroll { 0%{transform:translateX(0%)} 100%{transform:translateX(-50%)} }
                 @keyframes koplayer-spin { to{transform:rotate(360deg)} }
+                .kop-panel button:focus-visible, .kop-panel input:focus-visible { outline: 2px solid var(--kb-accent, #7c9cff); outline-offset: 2px; }
+                @media (prefers-reduced-motion: reduce) { .koplayer-marquee { animation: none; } }
             `}</style>
         </div>
     );
