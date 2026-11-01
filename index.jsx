@@ -300,19 +300,20 @@ const DetectedTabItem = ({ url, onPick }) => {
     return (
         <button
             onClick={() => onPick(url)}
-            className="w-full flex items-center gap-2.5 px-2 py-1.5 rounded-md text-left hover:bg-white/10 transition-colors"
+            className="w-full flex items-center text-left"
+            style={{ gap: 12, minHeight: 48, padding: '4px 8px 4px 4px', marginBottom: 6, border: 0, borderRadius: 16, cursor: 'pointer', background: 'var(--kb-bg-tile, var(--theme-surface, #242833))', color: 'var(--kb-fg-1, #fff)' }}
         >
             {thumbnail ? (
-                <div className="w-12 h-8 rounded overflow-hidden shrink-0 bg-black/40 border border-white/10 relative flex items-center justify-center">
+                <div className="overflow-hidden shrink-0 relative flex items-center justify-center" style={{ width: 56, height: 40, borderRadius: 12, background: 'var(--kb-bg-inset, rgba(0,0,0,.25))' }}>
                     <img src={thumbnail} alt="" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                         <span className="material-symbols-outlined text-white text-[14px]">play_arrow</span>
                     </div>
                 </div>
             ) : (
-                <span className="material-symbols-outlined text-primary text-[14px] shrink-0 w-12 text-center">play_circle</span>
+                <span className="material-symbols-outlined shrink-0 text-center" style={{ width: 56, fontSize: 24, color: 'var(--kb-accent, var(--theme-accent, #7c9cff))' }}>play_circle</span>
             )}
-            <span className="text-xs text-slate-300 truncate" title={title || urlShortLabel(url)}>
+            <span className="truncate" style={{ fontSize: 13, color: 'var(--kb-fg-1, #fff)' }} title={title || urlShortLabel(url)}>
                 {title || urlShortLabel(url)}
             </span>
         </button>
@@ -537,7 +538,7 @@ const KoPlayerPopup = ({ onClose, anchorRect }) => {
     const T_FG3 = 'var(--kb-fg-3, #778)';
 
     const circleBtn = { background: T_CONTAINER, color: T_ON_CONTAINER, width: 44, height: 44, borderRadius: 22, border: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' };
-    const smallCircle = { background: T_INSET, color: T_FG1, width: 36, height: 36, borderRadius: 18, border: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' };
+    const smallCircle = { background: T_CONTAINER, color: T_ON_CONTAINER, width: 36, height: 36, borderRadius: 18, border: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' };
 
     useEffect(() => {
         const onKey = (e) => { if (e.key === 'Escape') onClose(); };
@@ -572,7 +573,7 @@ const KoPlayerPopup = ({ onClose, anchorRect }) => {
                 <div style={{ background: T_CONTAINER, width: 44, height: 44, borderRadius: 15, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <span className="material-symbols-outlined" style={{ ...iconStyle(24, 1), color: T_ACCENT }}>music_note</span>
                 </div>
-                <h3 style={{ flex: 1, minWidth: 0, margin: 0, fontSize: 19, fontWeight: 600, fontFamily: 'var(--kb-font-display, inherit)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>KoPlayer</h3>
+                <h3 style={{ flex: 1, minWidth: 0, margin: 0, fontSize: 19, fontWeight: 600, fontFamily: 'var(--kb-font-display, inherit)' }}>KoPlayer</h3>
                 <button type="button" onClick={handlePipClick} title={pipTitle} aria-label={pipTitle} className="no-drag-region" style={pipBtnStyle}>
                     {pipPhase === 'detecting' ? (
                         <div style={{ width: 16, height: 16, borderRadius: '50%', border: '2px solid var(--kb-stroke-control, rgba(255,255,255,.25))', borderTopColor: T_ACCENT, animation: 'koplayer-spin 0.7s linear infinite' }} />
@@ -675,9 +676,9 @@ const KoPlayerPopup = ({ onClose, anchorRect }) => {
                     </div>
                 </>
             ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px 8px' }}>
-                    <div style={{ width: 64, height: 64, borderRadius: 24, background: T_SURFACE, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
-                        <span className="material-symbols-outlined" style={{ ...iconStyle(32), color: T_FG3 }}>music_off</span>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px 20px', border: '2px dashed var(--kb-stroke-subtle, var(--theme-border, rgba(255,255,255,.14)))', borderRadius: 28 }}>
+                    <div style={{ width: 64, height: 64, borderRadius: 22, background: T_CONTAINER, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                        <span className="material-symbols-outlined" style={{ ...iconStyle(32), color: T_ACCENT }}>music_off</span>
                     </div>
                     <p style={{ margin: 0, fontSize: 15, fontWeight: 600, textAlign: 'center' }}>{t('noMediaPlaying')}</p>
                     <p style={{ margin: '4px 0 0', fontSize: 13, color: T_FG2, textAlign: 'center' }}>{t('playSomething')}</p>
