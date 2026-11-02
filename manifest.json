@@ -1,7 +1,7 @@
 {
   "id": "koplayer-plugin",
   "name": "koPlayer",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A lightweight, floating media player to control your music and videos. Enjoy seamless media playback integration while working.",
   "author": "KoBar",
   "entry": "index.js",
@@ -23,7 +23,7 @@
     "ja",
     "hi"
   ],
-  "versionNote": "Updated plugin images.",
+  "versionNote": "New design for KoBar 1.5: now playing with the source app, clear controls and a picture-in-picture card; the bar tile shows level bars while playing.",
   "image": "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/koplayer.png",
   "storeImage": [
     "https://raw.githubusercontent.com/Kobar-Project/KoBar-Assets/main/Plugins%20images/KoPlayer/KoPlayer1.png",
